@@ -1,0 +1,438 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header{
+  position: fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 200px;
+  background:rgba(0, 0, 0, 0.849);
+  backdrop-filter:blur(5px);
+  z-index:1000;
+  padding:25px 200px 25px 0px ;
+}
+
+
+nav ul{
+  display:flex;
+  justify-content: space-between;
+  list-style:none;
+  gap:30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.logo{
+  font-weight:bold;
+  font-size:22px;
+  font-style: inherit;
+  color:rgba(255, 255, 255, 0.938);
+  margin-left: 100px;
+}
+nav a{
+  text-decoration:none;
+  color:rgba(255, 255, 255, 0.938);
+}
+
+nav a:hover{
+  color:#ff3c00;
+}
+.sec1{
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  padding-right: 70px;
+  
+
+}
+.sec1 h1{
+  font-size: 45px;
+}
+.sec1 span{
+  font-size: 30px;
+  font-weight: bold;
+}
+.sec1 p{
+  font-size: 17px;
+}
+.sec1 button{
+  width: 14%;
+  border: none;
+  border-radius: 55px;
+  background-color: #ff3c00;
+  color: whitesmoke;
+  padding:15px 20px 15px 20px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+.sec1 button:hover{
+  transform:scale(1.1);
+}
+
+.sec2{
+  padding:10px 0px 10px 0px;
+  text-align:center;
+    backdrop-filter:blur(20px);
+}
+.sec2 h2{
+  padding-top: 30px;
+  padding-right: 100px;
+  font-size: 40px;
+  
+  
+}
+
+.sec2 div{
+    display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:15px;
+  
+}
+.card{
+  width:300px;
+  padding:20px;
+  font-size: 14px;
+  border-radius:15px;
+  background:rgba(0, 0, 0, 0.76);
+  backdrop-filter:blur(10px);
+  transition:0.4s;
+}
+.card:hover{
+  background-color: #ff3c00;
+  transform:scale(1.08);
+}
+
+.main{
+   padding:10px 0px 10px 0px;
+  text-align:center;
+  background-color: black;
+  
+}
+
+.main h2{
+   padding-top: 30px;
+  padding-right: 100px;
+  font-size: 40px;
+}
+
+
+
+.main div{
+    display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:15px;
+  
+}
+
+.card1{
+  width:300px;
+  height: 300px;
+  padding:20px;
+  border-radius:15px;
+  background:rgba(0, 0, 0, 0.76);
+  backdrop-filter:blur(10px);
+  transition:0.4s;
+}
+
+.card1:hover{
+    transform:scale(1.08);
+
+}
+
+
+/* .header-controls{
+  display:flex;
+  gap:15px;
+  align-items:center;
+} */
+
+#menu-toggle{
+  display:none;
+  flex-direction: column;
+  cursor:pointer;
+}
+
+.menu-toggle span {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.testimonial-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+  margin-top:50px;
+}
+
+.testimonial-card{
+  width:260px;
+  padding:25px;
+  border-radius:15px;
+  background:black;
+  backdrop-filter:blur(10px);
+  text-align:center;
+  transition:0.4s;
+}
+
+.testimonial-card img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:3px solid #ff3c00;
+}
+
+.testimonial-card p{
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.testimonial-card:hover{
+  transform:translateY(-10px) scale(1.05);
+  color:white;
+}
+
+.section{
+   padding:10px 0px 180px 0px;
+  text-align:center;
+    backdrop-filter:blur(10px);
+
+}
+
+.section h2{
+  padding-top: 30px;
+  padding-right: 100px;
+  font-size: 30px;
+  
+  
+}
+.section span{
+    backdrop-filter:blur(20px);
+    
+
+}
+
+.main1{
+   padding:0px 0px 10px 0px;
+  text-align:center;
+  background-color: black;
+}
+
+.main1 h2{
+  padding:30px;
+  /* padding-top: 30px;
+  padding-right: 100px; */
+  font-size: 30px;
+  
+  
+}
+
+/* .booking-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  width:300px;
+  margin:auto;
+  padding-bottom: 20px;
+}
+
+.booking-form input,
+.booking-form textarea{
+  padding:12px;
+  border:none;
+  border-radius:8px;
+}
+
+.booking-form button{
+  padding:12px;
+  border:none;
+  background:#ff3c00;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.booking-form button:hover{
+  background:#ff6600;
+} */
+.p{
+  padding:30px 0px 30px 600px;
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.445);
+}
+
+.contact{
+  background-color: white;
+  padding:20px;
+  margin-left: 470px;
+  margin-bottom: 0px;
+  border: none;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  color: black;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 10px;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer{
+  margin:50px 0px 30px 500px
+
+}
+
+
+/* WhatsApp Button */
+.whatsapp-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  font-size:26px;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3);
+  transition:0.3s;
+  z-index:1000;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+}
+.whatsapp-btn:hover{
+  transform:scale(1.1);
+}
+
+
+
+
+@media(max-width:768px){
+
+ header{
+    position: relative;
+
+}
+
+.navbar{
+  display: flex;
+}
+
+nav{
+  
+ position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    /* background: #111; */
+        backdrop-filter:blur(60px);
+    flex-direction: column;
+    text-align: end;
+    display: none;
+    padding-right: 50px;
+    
+  }
+
+  nav ul{
+    flex-direction:column;
+    gap:15px;
+    
+  }
+
+  nav ul :hover{
+    color: #ff3c00;
+    
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  
+
+  .logo{
+  margin-left: 0px;
+  padding-left: 10px;
+}
+
+  #menu-toggle{
+    display:flex;
+  }
+
+  .sec2{
+  padding:30px 0px 10px 0px;
+}
+
+  .section{
+     padding:10px 0px 18px 0px;
+  }
+
+  .section h2{
+    padding-left: 50px;
+  }
+  .footer{
+    padding: 10px;
+    margin:0px 0px 0px 20px
+  
+  }
+
+  .contact{
+    margin-left: 20px;
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  .sec1 button{
+    width: 150px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+  }
+
+  .sec1{
+    padding:30px 0px 100px 0px;
+    margin-top: 110px;
+    margin-bottom: 0px;
+  }
+
+  .sw{
+        padding-left: 20px;
+  }
+
+
+}
+
